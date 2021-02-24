@@ -1,22 +1,3 @@
-//Players name
-
-const playerOneName = document.querySelector('#playerOneName');
-const playerTwoName = document.querySelector('#playerTwoName');
-let nameOne = document.querySelector('#playerOneName');
-let nameTwo = document.querySelector('#playerTwoName');
-
-const nameFirst = prompt('Enter player One');
-const nameSecond = prompt('Enter player Two');
-
-if (nameFirst) {
-    document.querySelector('#playerOneName').innerText = nameFirst;
-    console.log(nameFirst);
-}
-
-if (nameSecond) {
-    document.querySelector('#playerTwoName').innerText = nameSecond;
-    console.log(nameSecond);
-}
 
 //     e.stopImmediatePropagation();
 //     aim.style.backgroundColor = 'red';
@@ -60,28 +41,6 @@ function boardwon() {
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 // COUNTER RESET !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-// Target config
-const aim = document.querySelector('#cube');
-const playground = document.querySelector('#playground');
-let playerOne = 0;
-let playerTwo = 0;
-aim.addEventListener('click', function (e) {
-    if (e) {
-        e.stopImmediatePropagation();
-        playerOne++;
-        playerTwo = 0;
-        document.querySelector('#playerOne').innerText = playerOne;
-    }
-})
-
-playground.addEventListener('click', function (e) {
-    if (e) {
-        playerTwo++;
-        playerOne;
-        console.log('Player Two Win! ' + playerOne + ' - ' + playerTwo);
-        document.querySelector('#playerTwo').innerText = playerTwo;
-    }
-})
 
 
 //Moving Cube
@@ -126,6 +85,3 @@ document.addEventListener('keydown', function (e) {
 // if ()
 // let clicked = clicked +1;
 // document.getElementById("player1").innerHTML = clicked;
-
-// Players
-
