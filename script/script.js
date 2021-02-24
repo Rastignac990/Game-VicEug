@@ -31,6 +31,9 @@ document.addEventListener('keydown', function (e) {
         posLeft = 0;
     }
     if (e.code == "ArrowLeft") {
+        let newP = parseInt(playerKeyboard.style.right);
+        newP = newP - 10;
+        newP + "%";
         posLeft--;
     };
     if (posLeft < 0) {
