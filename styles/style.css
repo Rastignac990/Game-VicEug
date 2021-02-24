@@ -29,7 +29,6 @@ body {
     justify-content: space-between;
     align-items: center;
     font-size: 2rem;
-    width: ;
 }
 #playground {
   margin-top: 8%;
@@ -46,6 +45,7 @@ body {
   top: 0;
   left: 0;
   height: 10%;
+
   background-color: indianred;
 
 }
