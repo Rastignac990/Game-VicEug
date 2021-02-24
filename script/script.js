@@ -18,48 +18,6 @@ if (nameSecond) {
     //console.log(nameSecond);
 }
 
-//     e.stopImmediatePropagation();
-//     aim.style.backgroundColor = 'red';
-// })
-
-// playground.addEventListener('click', function (e) {
-//     alert('The keyboard won');
-//     console.log('You lose');
-// })
-
-
-
-// MOUSE WON !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-/* let mouseclicked = 0;
-
-function mousewon() {
-    event.stopImmediatePropagation();
-    mouseclicked +=1;
-    if (mouseclicked > 1) {
-        mouseclicked = 0;
-        mousemisclicked = 0
-    }
-    document.getElementById("player1").innerHTML = mouseclicked;
-    
-}
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-// BOARD WON !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-let mousemisclicked = 0;
-
-function boardwon() {
-    
-    mousemisclicked +=1;
-    if (mousemisclicked > 4) {
-        mouseclicked = 0;
-        mousemisclicked = 0;
-        console.log("Hellooooo")
-        
-    }
-    document.getElementById("player2").innerHTML = mousemisclicked;
-}
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-// COUNTER RESET !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-*/
 // Target config
 const aim = document.querySelector('#cube');
 const playground = document.querySelector('#playground');
@@ -122,7 +80,16 @@ document.addEventListener('keydown', function (e) {
     playerKeyboard.style.left = posLeft + '%';
     playerKeyboard.style.top = posTop + '%';
 })
-// document.querySelector("#cube").click
-// if ()
-// let clicked = clicked +1;
-// document.getElementById("player1").innerHTML = clicked;
+
+
+//Timer
+let seconds = 30;
+const interval = setInterval(function () {
+    document.querySelector('#chrono').innerText = seconds;
+    seconds--;
+    if (seconds == -1) {
+        clearInterval(interval);
+        alert('Finish');
+    }
+
+}, 1000);
