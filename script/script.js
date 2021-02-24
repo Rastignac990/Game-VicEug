@@ -29,8 +29,15 @@ document.addEventListener('keydown', function (e) {
         playerKeyboard.style.left = posLeft + '%';
     };
     if (e.code == "ArrowLeft") {
-        posRight--;
-        playerKeyboard.style.right = posRight + '%';
+        posLeft--;
+        playerKeyboard.style.left = posLeft + '%';
     };
-
+    if (e.code == "ArrowDown") {
+        posTop++;
+        playerKeyboard.style.top = posTop + '%';
+    };
+    if (e.code == "ArrowUp") {
+        posTop--;
+        playerKeyboard.style.top = posTop + '%';
+    };
 })
