@@ -54,7 +54,10 @@ body {
   margin-top: 8%;
   width: 95vw;
   height: 80vh;
-  background-color: lightgray;
+  background-image: url(/images/images.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   position: relative;
 }
 #cube {
