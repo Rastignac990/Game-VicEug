@@ -3,16 +3,24 @@
 // Target config
 const aim = document.querySelector('#cube');
 const playground = document.querySelector('#playground');
+let playerOne = 0;
+let playerTwo = 0;
 aim.addEventListener('click', function (e) {
-    aim.style.backgroundColor = 'red';
-    console.log('you won');
-    e.stopImmediatePropagation();
-    aim.style.backgroundColor = 'red';
+    if (e) {
+        e.stopImmediatePropagation();
+        playerOne++;
+        playerTwo = 0;
+        console.log('Player One Win! ' + playerOne + ' - ' + playerTwo);
+        document.querySelector('#playerOne').innerText = playerOne;
+    }
+
 })
 
 playground.addEventListener('click', function (e) {
-    alert('The keyboard won');
-    console.log('You lose');
+    playerTwo++;
+    playerOne;
+    console.log('Player Two Win! ' + playerOne + ' - ' + playerTwo);
+    document.querySelector('#playerTwo').innerText = playerTwo;
 })
 
 
@@ -54,4 +62,6 @@ document.addEventListener('keydown', function (e) {
     playerKeyboard.style.left = posLeft + '%';
     playerKeyboard.style.top = posTop + '%';
 })
+
+// Players
 
