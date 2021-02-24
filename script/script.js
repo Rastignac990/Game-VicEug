@@ -17,10 +17,10 @@ playground.addEventListener('click', function (e) {
 
 
 //Moving Cube
-let posTop = 10;
-let posRight = 10;
-let posLeft = 10;
-let posDown = 10;
+let posTop = 0;
+let posRight = 0;
+let posLeft = 0;
+let posDown = 0;
 let playerKeyboard = document.querySelector('#cube');
 document.addEventListener('keydown', function (e) {
     console.log(e);
