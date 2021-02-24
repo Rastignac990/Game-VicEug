@@ -33,22 +33,23 @@ body {
   width: 50vw;
 }
 
-.players{
-    position: absolute;
-    top: 20px;
-    display: flex;
-    justify-content: space-evenly;
-    width: 100vw;
+.players {
+  position: absolute;
+  top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100vw;
 }
-.player-one, .player-two{
-    border: 2px solid black;
-    padding: 0 25px;
+.player-one,
+.player-two {
+  border: 2px solid black;
+  padding: 0 25px;
 }
-.score{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 2rem;
+.score {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
 }
 #playground {
   margin-top: 8%;
@@ -57,7 +58,7 @@ body {
   background-image: url(/images/images.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-    background-position: center;
+  background-position: center;
   position: relative;
 }
 #cube {
@@ -66,8 +67,8 @@ body {
   left: 0;
 }
 
-#cube img{
-    height: 100px;
+#cube img {
+  height: 100px;
 }
 /* #aim {
   width: 30px;
