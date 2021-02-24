@@ -113,10 +113,4 @@ const interval = setInterval(function () {
 
 }, 1000);
 
-
-function cubeLevel() {
-    if (playerOne == 3) {
-        aim.style.height = '35px';
-
-    }
-}
+let image = document.querySelector('img');
