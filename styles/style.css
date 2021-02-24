@@ -22,3 +22,9 @@ body {
   border-radius: 50%;
   background-color: indianred;
 }
+#aim {
+  width: 30px;
+  height: 30px;
+  background-color: indigo;
+  border-radius: 50%;
+}
