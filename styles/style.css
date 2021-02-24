@@ -9,6 +9,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: crosshair;
+  
 }
 #playground {
   margin-top: 8%;
@@ -22,9 +24,10 @@ body {
   border-radius: 50%;
   background-color: indianred;
 }
-#aim {
+/* #aim {
   width: 30px;
   height: 30px;
   background-color: indigo;
   border-radius: 50%;
 }
+*/
