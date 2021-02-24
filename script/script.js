@@ -29,17 +29,17 @@ aim.addEventListener('click', function (e) {
         e.stopImmediatePropagation();
         playerOne++;
         playerTwo = 0;
-        console.log('Player One Win! ' + playerOne + ' - ' + playerTwo);
         document.querySelector('#playerOne').innerText = playerOne;
     }
-
 })
 
 playground.addEventListener('click', function (e) {
-    playerTwo++;
-    playerOne;
-    console.log('Player Two Win! ' + playerOne + ' - ' + playerTwo);
-    document.querySelector('#playerTwo').innerText = playerTwo;
+    if (e) {
+        playerTwo++;
+        playerOne;
+        console.log('Player Two Win! ' + playerOne + ' - ' + playerTwo);
+        document.querySelector('#playerTwo').innerText = playerTwo;
+    }
 })
 
 
