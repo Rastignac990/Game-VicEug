@@ -57,7 +57,7 @@ body {
   background-image: url(/images/images.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+    background-position: center;
   position: relative;
 }
 #cube {
