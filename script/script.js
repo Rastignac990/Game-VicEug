@@ -94,6 +94,9 @@ document.addEventListener('keydown', function (e) {
     //console.log(e);
     if (e.code == "ArrowRight") {
         posLeft++;
+        posLeft++;
+        posLeft++;
+        posLeft++;
     };
     if (posLeft > 95) {
         posLeft = 0;
@@ -103,17 +106,26 @@ document.addEventListener('keydown', function (e) {
         newP = newP - 10;
         newP + "%";
         posLeft--;
+        posLeft--;
+        posLeft--;
+        posLeft--;
     };
     if (posLeft < 0) {
         posLeft = 95;
     }
     if (e.code == "ArrowDown") {
         posTop++;
+        posTop++;
+        posTop++;
+        posTop++;
     };
     if (posTop > 90) {
         posTop = 0;
     }
     if (e.code == "ArrowUp") {
+        posTop--;
+        posTop--;
+        posTop--;
         posTop--;
     };
     if (posTop < 0) {
