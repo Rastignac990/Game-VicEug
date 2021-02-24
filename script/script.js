@@ -1,20 +1,20 @@
 //Players name
 
-const playerOneName = document.querySelector('#playerOneName');
-const playerTwoName = document.querySelector('#playerTwoName');
-let nameOne = document.querySelector('#playerOneName');
-let nameTwo = document.querySelector('#playerTwoName');
+const playerOneName = document.querySelector('.playerOneName');
+const playerTwoName = document.querySelector('.playerTwoName');
+let nameOne = document.querySelector('.playerOneName');
+let nameTwo = document.querySelector('.playerTwoName');
 
 const nameFirst = prompt('Enter player One');
 const nameSecond = prompt('Enter player Two');
 
 if (nameFirst) {
-    document.querySelector('#playerOneName').innerText = nameFirst;
+    document.querySelector('.playerOneName').innerText = nameFirst;
     //console.log(nameFirst);
 }
 
 if (nameSecond) {
-    document.querySelector('#playerTwoName').innerText = nameSecond;
+    document.querySelector('.playerTwoName').innerText = nameSecond;
     //console.log(nameSecond);
 }
 
