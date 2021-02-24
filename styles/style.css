@@ -69,11 +69,6 @@ body {
 
 #cube img {
   height: 85px;
+  user-select: none;
 }
-/* #aim {
-  width: 30px;
-  height: 30px;
-  background-color: indigo;
-  border-radius: 50%;
-}
-*/
+
