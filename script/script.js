@@ -81,7 +81,6 @@ document.addEventListener('keydown', function (e) {
     playerKeyboard.style.top = posTop + '%';
 })
 
-
 //Timer
 let seconds = 30;
 const interval = setInterval(function () {
@@ -101,3 +100,11 @@ const interval = setInterval(function () {
     }
 
 }, 1000);
+
+
+function cubeLevel() {
+    if (playerOne == 3) {
+        aim.style.height = '35px';
+
+    }
+}
