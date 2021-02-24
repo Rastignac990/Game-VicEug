@@ -105,4 +105,3 @@ const interval = setInterval(function () {
 
 }, 1000);
 
-let image = document.querySelector('img');
