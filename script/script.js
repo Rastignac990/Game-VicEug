@@ -97,6 +97,7 @@ const interval = setInterval(function () {
     if (seconds == -1) {
         clearInterval(interval);
         document.querySelector('#chrono').style.color = 'black';
+        alert('Final Score is : ' + playerOne + '-' + playerTwo);
     }
 
 }, 1000);
