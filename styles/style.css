@@ -13,23 +13,24 @@ body {
   position: relative;
   text-align: center;
 }
-.players{
-    position: absolute;
-    top: 20px;
-    display: flex;
-    justify-content: space-evenly;
-    width: 100vw;
+.players {
+  position: absolute;
+  top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100vw;
 }
-.player-one, .player-two{
-    border: 2px solid black;
-    padding: 0 25px;
+.player-one,
+.player-two {
+  border: 2px solid black;
+  padding: 0 25px;
 }
-.score{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 2rem;
-    width: 50vw;
+.score {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+  width: 50vw;
 }
 #playground {
   margin-top: 8%;
@@ -48,7 +49,6 @@ body {
   height: 10%;
 
   background-color: indianred;
-
 }
 /* #aim {
   width: 30px;
