@@ -31,6 +31,8 @@ body {
   align-items: center;
   font-size: 2rem;
   width: 50vw;
+}
+
 .players{
     position: absolute;
     top: 20px;

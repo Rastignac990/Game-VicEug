@@ -1,3 +1,22 @@
+//Players name
+
+const playerOneName = document.querySelector('#playerOneName');
+const playerTwoName = document.querySelector('#playerTwoName');
+let nameOne = document.querySelector('#playerOneName');
+let nameTwo = document.querySelector('#playerTwoName');
+
+const nameFirst = prompt('Enter player One');
+const nameSecond = prompt('Enter player Two');
+
+if (nameFirst) {
+    document.querySelector('#playerOneName').innerText = nameFirst;
+    //console.log(nameFirst);
+}
+
+if (nameSecond) {
+    document.querySelector('#playerTwoName').innerText = nameSecond;
+    //console.log(nameSecond);
+}
 
 //     e.stopImmediatePropagation();
 //     aim.style.backgroundColor = 'red';
@@ -11,7 +30,7 @@
 
 
 // MOUSE WON !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-let mouseclicked = 0;
+/* let mouseclicked = 0;
 
 function mousewon() {
     event.stopImmediatePropagation();
@@ -40,7 +59,29 @@ function boardwon() {
 }
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 // COUNTER RESET !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+*/
+// Target config
+const aim = document.querySelector('#cube');
+const playground = document.querySelector('#playground');
+let playerOne = 0;
+let playerTwo = 0;
+aim.addEventListener('click', function (e) {
+    if (e) {
+        e.stopImmediatePropagation();
+        playerOne++;
+        playerTwo = 0;
+        document.querySelector('#playerOne').innerText = playerOne;
+    }
+})
 
+playground.addEventListener('click', function (e) {
+    if (e) {
+        playerTwo++;
+        playerOne;
+        //console.log('Player Two Win! ' + playerOne + ' - ' + playerTwo);
+        document.querySelector('#playerTwo').innerText = playerTwo;
+    }
+})
 
 
 //Moving Cube
@@ -50,7 +91,7 @@ let posLeft = 0;
 let posDown = 0;
 let playerKeyboard = document.querySelector('#cube');
 document.addEventListener('keydown', function (e) {
-    console.log(e);
+    //console.log(e);
     if (e.code == "ArrowRight") {
         posLeft++;
     };
