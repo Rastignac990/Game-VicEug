@@ -27,7 +27,7 @@ document.addEventListener('keydown', function (e) {
     if (e.code == "ArrowRight") {
         posLeft++;
     };
-    if (posLeft > 90) {
+    if (posLeft > 95) {
         posLeft = 0;
     }
     if (e.code == "ArrowLeft") {
@@ -37,7 +37,7 @@ document.addEventListener('keydown', function (e) {
         posLeft--;
     };
     if (posLeft < 0) {
-        posLeft = 90;
+        posLeft = 95;
     }
     if (e.code == "ArrowDown") {
         posTop++;
