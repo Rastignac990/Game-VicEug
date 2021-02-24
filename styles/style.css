@@ -65,6 +65,9 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  transition-duration: 0.01s;
+  transition-timing-function: ease-in;
+  transition-delay: 0s;
 }
 
 #cube img {
