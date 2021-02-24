@@ -10,12 +10,12 @@ const nameSecond = prompt('Enter player Two');
 
 if (nameFirst) {
     document.querySelector('#playerOneName').innerText = nameFirst;
-    console.log(nameFirst);
+    //console.log(nameFirst);
 }
 
 if (nameSecond) {
     document.querySelector('#playerTwoName').innerText = nameSecond;
-    console.log(nameSecond);
+    //console.log(nameSecond);
 }
 
 //     e.stopImmediatePropagation();
@@ -30,7 +30,7 @@ if (nameSecond) {
 
 
 // MOUSE WON !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-let mouseclicked = 0;
+/* let mouseclicked = 0;
 
 function mousewon() {
     event.stopImmediatePropagation();
@@ -59,7 +59,7 @@ function boardwon() {
 }
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 // COUNTER RESET !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
+*/
 // Target config
 const aim = document.querySelector('#cube');
 const playground = document.querySelector('#playground');
@@ -78,7 +78,7 @@ playground.addEventListener('click', function (e) {
     if (e) {
         playerTwo++;
         playerOne;
-        console.log('Player Two Win! ' + playerOne + ' - ' + playerTwo);
+        //console.log('Player Two Win! ' + playerOne + ' - ' + playerTwo);
         document.querySelector('#playerTwo').innerText = playerTwo;
     }
 })
@@ -91,7 +91,7 @@ let posLeft = 0;
 let posDown = 0;
 let playerKeyboard = document.querySelector('#cube');
 document.addEventListener('keydown', function (e) {
-    console.log(e);
+    //console.log(e);
     if (e.code == "ArrowRight") {
         posLeft++;
     };
