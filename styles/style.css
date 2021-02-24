@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#playground {
+  margin-top: 8%;
+  width: 95vw;
+  height: 80vh;
+  background-color: lightgray;
+}
+#cube {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: indianred;
+}
