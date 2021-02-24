@@ -17,12 +17,13 @@ body {
   width: 95vw;
   height: 80vh;
   background-color: lightgray;
+  position: relative;
 }
 #cube {
   width: 100px;
   position: absolute;
-  top: 20%;
-  left: 10%;
+  top: 0;
+  left: 0;
   height: 100px;
   border-radius: 50%;
   background-color: indianred;
