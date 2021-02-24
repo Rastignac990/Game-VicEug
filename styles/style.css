@@ -31,6 +31,22 @@ body {
   align-items: center;
   font-size: 2rem;
   width: 50vw;
+.players{
+    position: absolute;
+    top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+}
+.player-one, .player-two{
+    border: 2px solid black;
+    padding: 0 25px;
+}
+.score{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
 }
 #playground {
   margin-top: 8%;
