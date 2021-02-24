@@ -85,11 +85,18 @@ document.addEventListener('keydown', function (e) {
 //Timer
 let seconds = 30;
 const interval = setInterval(function () {
-    document.querySelector('#chrono').innerText = seconds;
+    document.querySelector('#chrono').innerText = ('0' + seconds).slice(-2);
     seconds--;
+    if (seconds < 10) {
+        document.querySelector('#chrono').style.color = 'orange';
+    }
+    if (seconds < 5) {
+        document.querySelector('#chrono').style.color = 'red';
+        document.querySelector('#chrono').style.scale = '2';
+    }
     if (seconds == -1) {
         clearInterval(interval);
-        alert('Finish');
+        document.querySelector('#chrono').style.color = 'black';
     }
 
 }, 1000);
