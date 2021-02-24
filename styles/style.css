@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  cursor: crosshair;
 }
 
 body {
@@ -9,9 +10,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: crosshair;
   
+  position: relative;
 }
+.players{
+    position: absolute;
+    top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
 #playground {
   margin-top: 8%;
   width: 95vw;
