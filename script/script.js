@@ -26,31 +26,29 @@ document.addEventListener('keydown', function (e) {
     console.log(e);
     if (e.code == "ArrowRight") {
         posLeft++;
-        playerKeyboard.style.left = posLeft + '%';
     };
-    if (posLeft > 93.7) {
+    if (posLeft > 90) {
         posLeft = 0;
     }
     if (e.code == "ArrowLeft") {
         posLeft--;
-        playerKeyboard.style.left = posLeft + '%';
     };
     if (posLeft < 0) {
-        posLeft = 93;
+        posLeft = 90;
     }
     if (e.code == "ArrowDown") {
         posTop++;
-        playerKeyboard.style.top = posTop + '%';
     };
-    if (posTop > 86) {
+    if (posTop > 90) {
         posTop = 0;
     }
     if (e.code == "ArrowUp") {
         posTop--;
-        playerKeyboard.style.top = posTop + '%';
     };
     if (posTop < 0) {
-        posTop = 86;
+        posTop = 90;
     }
+    playerKeyboard.style.left = posLeft + '%';
+    playerKeyboard.style.top = posTop + '%';
 })
 
