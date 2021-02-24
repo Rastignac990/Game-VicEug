@@ -23,7 +23,7 @@ const aim = document.querySelector('#cube');
 const playground = document.querySelector('#playground');
 let playerOne = 0;
 let playerTwo = 0;
-aim.addEventListener('click', function (e) {
+aim.addEventListener('mousedown', function (e) {
     if (e) {
         e.stopImmediatePropagation();
         playerOne++;
@@ -32,7 +32,7 @@ aim.addEventListener('click', function (e) {
     }
 })
 
-playground.addEventListener('click', function (e) {
+playground.addEventListener('mousedown', function (e) {
     if (e) {
         playerTwo++;
         playerOne;
@@ -55,6 +55,10 @@ document.addEventListener('keydown', function (e) {
         posLeft++;
         posLeft++;
         posLeft++;
+        posLeft++;
+        posLeft++;
+        posLeft++;
+        posLeft++;
     };
     if (posLeft > 95) {
         posLeft = 0;
@@ -63,6 +67,10 @@ document.addEventListener('keydown', function (e) {
         let newP = parseInt(playerKeyboard.style.right);
         newP = newP - 10;
         newP + "%";
+        posLeft--;
+        posLeft--;
+        posLeft--;
+        posLeft--;
         posLeft--;
         posLeft--;
         posLeft--;
