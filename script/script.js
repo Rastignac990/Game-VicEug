@@ -126,6 +126,3 @@ document.addEventListener('keydown', function (e) {
 // if ()
 // let clicked = clicked +1;
 // document.getElementById("player1").innerHTML = clicked;
-
-// Players
-
