@@ -14,3 +14,23 @@ playground.addEventListener('click', function (e) {
     alert('The keyboard won');
     console.log('You lose');
 })
+
+
+//Moving Cube
+let posTop = 10;
+let posRight = 10;
+let posLeft = 10;
+let posDown = 10;
+let playerKeyboard = document.querySelector('#cube');
+document.addEventListener('keydown', function (e) {
+    console.log(e);
+    if (e.code == "ArrowRight") {
+        posLeft++;
+        playerKeyboard.style.left = posLeft + '%';
+    };
+    if (e.code == "ArrowLeft") {
+        posRight--;
+        playerKeyboard.style.right = posRight + '%';
+    };
+
+})
